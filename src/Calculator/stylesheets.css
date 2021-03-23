@@ -1,0 +1,56 @@
+.button {
+    -fx-font-family: "Helvetica";
+    -fx-background-radius: 0, 0 ,0 ,0;
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+    -fx-min-width: 76px;
+    -fx-min-height: 51px;
+}
+
+#zero {
+    -fx-min-width: 152px;
+    -fx-min-height: 51px;
+}
+
+ #pow, #factorial, #changeSign,
+ #asin, #sin, #significant,
+ #acos, #cos, #sqrt,
+ #atan, #tan, #ln,
+ #lg, #pi, #e
+ {
+-fx-background-color:
+        #B5B8B1,
+        linear-gradient(#DBD7D2 0%, #F5F5F5 100%),
+        linear-gradient(#D0D0D0 0%, #FCFCFC 100%);
+}
+
+#clearTextArea, #removeLastSymbol ,#roundMath,
+#seven, #eighth, #nine,
+#four, #five, #six,
+#one, #two, #three,
+#zero, #point{
+-fx-background-color:
+        #FFFFFF,
+        linear-gradient(#DBD7D2 0%, #F5F5F5 100%),
+        linear-gradient(#F5F5F5 0%, #FFFFFF 100%);
+}
+
+#division, #multiply,
+#minus, #plus, #equally {
+-fx-background-color:
+        #F4C430,
+        linear-gradient(#DBD7D2 0%, #F5F5F5 100%),
+        linear-gradient(#FFDC33 0%, #FFB02E 100%);
+}
+
+#colourLine {
+-fx-fill: #F4C430;
+-fx-stroke:  #F4C430;
+}
+
+#textArea {
+    -fx-max-width: 532px;
+    -fx-max-height: 51px;
+}
+
+

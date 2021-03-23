@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="Calculator.MainWindow"
+          minHeight="335.0" minWidth="530.0"
+            prefHeight="335.0" prefWidth="530.0"
+            maxHeight="335.0" maxWidth="530.0">
+    <fx:define>
+        <ToggleGroup fx:id="Colours"/>
+    </fx:define>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="7" GridPane.RowSpan="1">
+        <MenuBar fx:id="bar" minWidth="530">
+            <Menu fx:id="settings" text="Settings">
+            <Menu fx:id="coloursMenu" text="Colours">
+                <RadioMenuItem fx:id="black" text="Black" toggleGroup="$Colours"/>
+                <RadioMenuItem fx:id="red" text="Red" toggleGroup="$Colours"/>
+                <RadioMenuItem fx:id="purple" text="Purple" toggleGroup="$Colours"/>
+                <RadioMenuItem fx:id="yellow" text="Yellow" toggleGroup="$Colours"/>
+            </Menu>
+                <Menu fx:id="font" text="Font">
+                    <CheckMenuItem fx:id="bold" text="Bold"/>
+                    <CheckMenuItem fx:id="italic" text="Italic"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="fontName" text="Font name"/>
+                    <MenuItem fx:id="fontWeight" text="Font Weight"/>
+                </Menu>
+            <SeparatorMenuItem/>
+                <MenuItem fx:id="exit" text="Exit"/>
+            </Menu>
+            <Menu fx:id="info" text="Info">
+                <MenuItem fx:id="aboutProgram" text="About program"/>
+                <SeparatorMenuItem/>
+                <MenuItem fx:id="aboutProgrammist" text="About programist"/>
+            </Menu>
+        </MenuBar>
+    </HBox>
+
+    <TextArea fx:id="textArea" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="7" GridPane.RowSpan="1"/>
+
+    <Button fx:id="pow" text="Pow" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button fx:id="factorial" text="Factorial" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button fx:id="changeSign" text="±" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+    <Button fx:id="clearTextArea" text="C" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+    <Button fx:id="removeLastSymbol" text="→" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+    <Button fx:id="roundMath" text="~" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+    <Button fx:id="division" text="÷" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
+
+    <Button fx:id="asin" text="asin" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button fx:id="sin" text="sin" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button fx:id="significant" text="1÷x" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+    <Button fx:id="seven" text="7" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+    <Button fx:id="eighth" text="8" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+    <Button fx:id="nine" text="9" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
+    <Button fx:id="multiply" text="*" GridPane.columnIndex="6" GridPane.rowIndex="4"/>
+
+    <Button fx:id="acos" text="acos" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Button fx:id="cos" text="cos" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Button fx:id="sqrt" text="√" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+    <Button fx:id="four" text="4" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+    <Button fx:id="five" text="5" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+    <Button fx:id="six" text="6" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
+    <Button fx:id="minus" text="-" GridPane.columnIndex="6" GridPane.rowIndex="5"/>
+
+    <Button fx:id="atan" text="atan"  GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Button fx:id="tan" text="tan" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Button fx:id="ln" text="ln" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+    <Button fx:id="one" text="1" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+    <Button fx:id="two" text="2" GridPane.columnIndex="4" GridPane.rowIndex="6"/>
+    <Button fx:id="three" text="3" GridPane.columnIndex="5" GridPane.rowIndex="6"/>
+    <Button fx:id="plus" text="+" GridPane.columnIndex="6" GridPane.rowIndex="6"/>
+
+    <Button fx:id="lg" text="lg" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <Button fx:id="pi" text="π" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <Button fx:id="e" text="e" GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+    <Button fx:id="zero" text="0" GridPane.columnIndex="3" GridPane.rowIndex="7" GridPane.columnSpan="2" GridPane.RowSpan="1"/>
+    <Button fx:id="point" text="." GridPane.columnIndex="5" GridPane.rowIndex="7"/>
+    <Button fx:id="equally" text="=" GridPane.columnIndex="6" GridPane.rowIndex="7"/>
+    <Line fx:id="colourLine" startY="331" endX="526" endY="331" strokeWidth="6" GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.columnSpan="7" GridPane.RowSpan="1"/>
+</GridPane>
